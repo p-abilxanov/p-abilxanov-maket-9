@@ -1,0 +1,25 @@
+.partners {
+    .container {
+        .partners__main {
+            @include flexbox(none, space-between, center);
+
+            .partners__item {
+                @include flexbox(column, none, none);
+                font-family: $fontFamilyGilroyBold;
+                color: $partnersItemTextColor;
+                line-height: 1.2;
+
+                img {
+                    align-self: center;
+                    filter: grayscale(1);
+                    transition: filter .5s;
+                    cursor: pointer;
+
+                    &:hover {
+                        filter: grayscale(0);
+                    }
+                }
+            }
+        }
+    }
+}

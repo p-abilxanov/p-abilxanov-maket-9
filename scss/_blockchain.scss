@@ -1,0 +1,52 @@
+.blockchain {
+    padding: 80px 0;
+    background: url(../image/bg.png);
+    background-size: 100% auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.blockchain__title {
+    @include flexbox(column, none, center);
+
+    span {
+        font-size: 28px;
+        font-family: $fontFamilySeravekBold;
+        color: rgb(75, 76, 76);
+        text-transform: uppercase;
+        line-height: 1.5;
+    }
+}
+
+.blockchain__main {
+    @include flexbox(column, none, none);
+
+    .blockchain__list {
+        @include flexbox(none, space-between, none);
+
+        &:nth-child(1) {
+            padding: 100px 0;
+        }
+    }
+
+    .blockchain__item {
+        max-width: 330px;
+        @include flexbox(column, none, center);
+
+        .blockchain__subtitle {
+            font-size: 18px;
+            font-family: $fontFamilyGilroyBold;
+            color: #78aee3;
+            line-height: 2.222;
+            padding-top: 10px;
+        }
+
+        .blockchain__text {
+            font-size: 15px;
+            font-family: $fontFamilyGilroyRegular;
+            text-align: center;
+            color: rgb(75, 76, 76);
+            line-height: 1.667;
+        }
+    }
+}

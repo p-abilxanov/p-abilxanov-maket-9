@@ -1,0 +1,133 @@
+.roadMap {
+    .container {
+        .roadMap__title {
+            @include flexbox(column, none, center);
+            padding: 120px 0 80px 0;
+
+            span {
+                font-size: 28px;
+                font-family: $fontFamilySeravekBold;
+                color: rgb(75, 76, 76);
+                text-transform: uppercase;
+                line-height: 1.5;
+            }
+
+            img {
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+.roadMap__main {
+    @include flexbox(column, none, center);
+    position: relative;
+    padding-bottom: 130px;
+
+    &::after {
+        content: url(../image/roadMilk.png);
+        transform: translateX(calc(55px / 2));
+        position: absolute;
+        top: 0;
+        z-index: 0;
+    }
+
+    .roadMap__item {
+        z-index: 1;
+    }
+
+    .roadMap__item:not(.roadMap-subtitle) {
+        width: calc((100% - 85px) / 2);
+        background-color: #fff;
+        padding: 48px 44px 25px 46px;
+
+        .roadMapItem__title {
+            font-size: 28px;
+            font-family: $fontFamilyGilroyBold;
+            color: rgb(253, 127, 112);
+            padding: 0 30px 16px 0;
+        }
+
+        .roadMapItem__text {
+            font-size: 14px;
+            font-family: $fontFamilyGilroyRegular;
+            color: rgb(52, 52, 52);
+            line-height: 1.733;
+            padding-bottom: 25px;
+        }
+
+        .roadMapItem__btn {
+            button {
+                background-color: #fff;
+                border: none;
+                appearance: none;
+                cursor: pointer;
+                font-size: 15px;
+                font-family: $fontFamilyGilroyRegular;
+                color: rgba(52, 52, 52, 0.71);
+
+                span {
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+
+    .roadMap__item:nth-child(2) {
+        .roadMapItem__title {
+            color: #45da9b;
+        }
+    }
+
+    .roadMap-subtitle {
+        @include flexbox(column, none, none);
+
+        .roadMapSubtitle__top {
+            padding: 18px 0;
+            font-size: 30px;
+            font-family: $fontFamilyGilroyBold;
+            color: rgb(61, 209, 147);
+            line-height: 0.8;
+
+            span {
+                color: rgb(75, 76, 76);
+            }
+        }
+
+        .roadMapSubtitle__bottom {
+            @include flexbox(none, none, none);
+
+            img {
+                padding: 0 22px 0 8px;
+            }
+
+            .roadMapSubtitle__time {
+                padding-left: 25px;
+                @include flexbox(column, none, none);
+                border-left: 2px solid #696c6e;
+
+                span:nth-child(1) {
+                    font-size: 18px;
+                    font-family: $fontFamilyGilroyRegular;
+                    color: rgb(85, 97, 128);
+                    line-height: 1.556;
+                }
+
+                span:nth-child(2) {
+                    font-size: 18px;
+                    font-family: $fontFamilyGilroySemiBold;
+                    color: #ff4557;
+                    line-height: 1.556;
+                }
+            }
+        }
+    }
+
+    .roadMap__item:nth-child(odd) {
+        align-self: flex-end;
+    }
+
+    .roadMap__item:nth-child(even) {
+        align-self: flex-start;
+    }
+}

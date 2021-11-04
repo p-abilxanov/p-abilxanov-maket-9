@@ -1,0 +1,151 @@
+.footer {
+    background: url(../image/footerBg.png);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+
+    .container {
+        @include flexbox(none, space-between, none);
+    }
+}
+
+.footer__social {
+    padding-top: 30px;
+
+    .admin-info {
+        @include flexbox(column, none, none);
+        padding-bottom: 20px;
+
+        span {
+            font-size: 15px;
+            font-family: $fontFamilyGilroyRegular;
+            color: rgb(114, 114, 114);
+            line-height: 1.667;
+        }
+
+        a {
+            font-size: 18px;
+            font-family: $fontFamilyGilroyRegular;
+            letter-spacing: 1px;
+            color: #fff;
+            line-height: 1.4;
+        }
+
+    }
+
+    .footer__socialIcon {
+        ul {
+            @include flexbox(none, none, center);
+
+            li {
+                &:nth-child(n+2) {
+                    margin-left: 9px;
+                }
+
+                a {
+                    border: 1px solid #666677;
+                    @include blockSize(35px, 35px);
+                    border-radius: 50%;
+                    @include flexbox(none, center, center);
+
+                    i {
+                        color: #fd5868;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer__nav {
+    padding-top: 70px;
+
+    .footer__form {
+        padding-bottom: 60px;
+
+        form {
+            @include flexbox(none, flex-end, center);
+
+            label {
+                position: relative;
+
+                input {
+                    width: 250px;
+                    margin-right: 30px;
+                    border: none;
+                    outline: none;
+                    background-color: transparent;
+                    border-bottom: 1px solid rgba(255, 255, 255, .149);
+                    padding: 16px 0;
+                    font-size: 15px;
+                    font-family: $fontFamilyGilroyRegular;
+                    color: rgba(255, 255, 255, 0.502);
+
+                    &:not(:placeholder-shown),
+                    &:focus,
+                    &:hover {
+                        &+span {
+                            bottom: 100%;
+                            color: rgba(255, 255, 255, 0.2);
+                        }
+                    }
+                }
+
+                span {
+                    font-size: 15px;
+                    font-family: $fontFamilyGilroyRegular;
+                    color: rgba(255, 255, 255, 0.502);
+                    position: absolute;
+                    bottom: 16px;
+                    left: 0;
+                    transition: bottom .5s, color .5s;
+
+                    &:hover {
+                        bottom: 100%;
+                        color: rgba(255, 255, 255, 0.2);
+                    }
+                }
+            }
+
+            input[type="submit"] {
+                background-color: transparent;
+                outline: none;
+                border: $headerNavBtnBorder;
+                color: $headerNavBtnColor;
+                font-family: $fontFamilySeravekRegular;
+                border-radius: 50px;
+                letter-spacing: 0.3px;
+                padding: $headerNavBtnPadding;
+                font-size: $headerNavBtnFontSize;
+            }
+        }
+    }
+
+    .footer__link {
+        padding-bottom: 45px;
+
+        ul {
+            @include flexbox(none, none, center);
+
+            li {
+                a {
+                    margin: 0 13px;
+                    font-size: 15px;
+                    font-family: $fontFamilySeravekRegular;
+                    color: rgba(255, 255, 255, 0.502);
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .footer__license {
+        @include flexbox(none, flex-end, none);
+        font-size: 15px;
+        font-family: $fontFamilyGilroyRegular;
+        color: rgba(255, 255, 255, 0.502);
+        padding-bottom: 30px;
+    }
+}

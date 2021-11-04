@@ -1,0 +1,51 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "keyframes";
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+}
+
+label, input {
+    cursor: pointer;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+@import "./mediaQuery/mediaQueryStyle";
+
+@import "./top";
+@import "./mediaQuery/mediaQueryTop";
+
+@import "./header";
+@import "./mediaQuery/mediaQueryHeader";
+
+@import "./partners";
+@import "./mediaQuery/mediaQueryPartners";
+
+@import "./productDescription";
+@import "./mediaQuery/mediaQueryProductDescription";
+
+@import "./productionProcess";
+
+@import "./roadMap";
+
+@import "./blockchain";
+
+@import "./command";
+
+@import "./question";
+
+@import "./form";
+
+@import "./footer";

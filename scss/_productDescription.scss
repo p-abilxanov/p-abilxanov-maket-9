@@ -1,0 +1,94 @@
+.product {
+    background: $productBgUrl;
+    background-size: 100% 100%;
+    background-position: center 10px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.productDescription {
+    .container {
+        .productDescription__title {
+            @include flexbox(column, none, center);
+
+            span {
+                font-family: $fontFamilySeravekBold;
+                color: $productDescriptionTitleColor;
+                text-transform: uppercase;
+                line-height: 1.429;
+            }
+        }
+
+        .productDescription__main {
+            background-color: $productDescriptionMainBgColor;
+            box-shadow: 0px 10px 32px 0px rgba(241, 230, 230, 0.43);
+
+            .productDescription__content {
+                .productDescription__subtitle {
+                    font-family: $fontFamilySeravekBold;
+                    color: $productDescriptionSubtitle;
+                    text-transform: uppercase;
+                    line-height: 1.429;
+                }
+
+                .productDescription__block {
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        background-color: $productDescriptionBlockBeforeBgColor;
+                    }
+
+                    .productDescription__item {
+                        position: relative;
+
+                        &::before {
+                            content: "";
+                            display: block;
+                            border-radius: 50%;
+                            position: absolute;
+                            left: 0px;
+                            border: $productDescriptionItemBeforeBorder;
+                            background-color: $productDescriptionItemBeforeBgColor;
+                        }
+
+                        &::after {
+                            content: "";
+                            display: block;
+                            @include blockSize(4px, 4px);
+                            border-radius: 50%;
+                            position: absolute;
+                            background-color: $productDescriptionItemAfterBgColor;
+                        }
+
+                        .productDescriptionItem__title {
+                            font-family: $fontFamilyGilroyBold;
+                            color: $productDescriptionItemTitleColor;
+                            line-height: 1.333;
+                        }
+
+                        .productDescriptionItem__text {
+                            font-family: $fontFamilyGilroyRegular;
+                            line-height: 1.333;
+                        }
+                    }
+                }
+
+                .productDescription__bonus {
+                    .productDescriptionBonus__title {
+                        font-family: $fontFamilyGilroyBold;
+                        color: $productDescriptionBonusTitleColor;
+                        line-height: 1.333;
+                    }
+
+                    .productDescriptionBonus__text {
+                        font-family: $fontFamilyGilroyRegular;
+                        line-height: 1.333;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.wrapper {
+    input[name="topHide"] {
+        display: none;
+
+        &:checked+.top {
+            max-height: 0;
+        }
+    }
+}
+
+.top {
+    max-height: $topMaxHeight;
+    overflow: hidden;
+    transition: max-height .5s;
+    background: $topBg;
+
+    .container {
+        @include flexbox(none, space-between, center);
+
+        label {
+            cursor: pointer;
+        }
+
+        .top__content {
+            @include flexbox(none, space-between, center);
+
+            span {
+                font-family: $fontFamilyGilroyRegular;
+                letter-spacing: 0.38px;
+                color: $topContentColor;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@media only screen and (min-width: 540px) {
+    .top {
+        .container {
+            padding: $topPadding;
+
+            #topHideLabel {
+                visibility: hidden;
+            }
+
+            .top__content {
+                span {
+                    font-size: $topContentFontSize;
+                    padding-left: $topContentPaddingLeft;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 539px) {
+    .top {
+        .container {
+            padding: calc(.2em + 2vw) 15px;
+
+            #topHideLabel {
+                display: none;
+            }
+
+            label {
+                img {
+                    @include blockSize(calc(.2em + 2vw), auto);
+                }
+            }
+
+            .top__content {
+                img {
+                    @include blockSize(calc(.4em + 4vw), auto);
+                }
+
+                span {
+                    font-size: calc(.2em + 2vw);
+                    padding-left: calc(.2em + 2vw);
+                }
+            }
+        }
+    }
+}

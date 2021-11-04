@@ -1,0 +1,294 @@
+@media only screen and (min-width: 1035px) {
+    .productDescription {
+        padding-bottom: $productDescriptionPaddingBottom;
+
+        .container {
+            .productDescription__title {
+                padding-bottom: $productDescriptionTitlePaddingBottom;
+
+                span {
+                    font-size: $productDescriptionTitleFontSize;
+                }
+            }
+
+            .productDescription__main {
+                @include flexbox(none, space-between, none);
+                padding: $productDescriptionMainPadding;
+
+                .productDescription__img {
+                    padding-top: $productDescriptionImgPaddingTop;
+                }
+
+                .productDescription__content {
+                    max-width: $productDescriptionContentMaxWidth;
+
+                    .productDescription__subtitle {
+                        font-size: $productDescriptionSubtitleFontSize;
+                        padding-bottom: $productDescriptionSubtitlePaddingBottom;
+                    }
+
+                    .productDescription__block {
+                        &::before {
+                            @include blockSize(2px, 70%);
+                            left: $productDescriptionBlockBeforeLeft;
+                            top: $productDescriptionBlockBeforeTop;
+                        }
+
+                        .productDescription__item {
+                            padding-left: $productDescriptionItemPaddingLeft;
+
+                            &::before {
+                                @include blockSize($productDescriptionItemBeforeSize, $productDescriptionItemBeforeSize);
+                                top: $productDescriptionItemBeforeTop;
+                            }
+
+                            &::after {
+                                left: $productDescriptionItemAfterLeft;
+                                top: $productDescriptionItemAfterTop;
+                            }
+
+                            .productDescriptionItem__title {
+                                font-size: $productDescriptionItemTitleFontSize;
+                            }
+
+                            .productDescriptionItem__text {
+                                padding: $productDescriptionItemTextPadding;
+                                font-size: $productDescriptionItemTextFontSize;
+                            }
+                        }
+                    }
+
+                    .productDescription__bonus {
+                        .productDescriptionBonus__title {
+                            padding-top: $productDescriptionBonusTitlePaddingTop;
+                            font-size: $productDescriptionBonusTitleFontSize;
+                        }
+
+                        .productDescriptionBonus__text {
+                            font-size: $productDescriptionBonusTextFontSize;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1034px) and (min-width: 881px) {
+    .productDescription {
+        padding-bottom: $mobileProductDescriptionPaddingBottom;
+
+        .container {
+            .productDescription__title {
+                padding-bottom: $mobileProductDescriptionTitlePaddingBottom;
+
+                span {
+                    font-size: $productDescriptionTitleFontSize;
+                }
+            }
+
+            .productDescription__main {
+                @include flexbox(column, none, none);
+                padding: $productDescriptionMainPadding;
+
+                .productDescription__img {
+                    width: 100%;
+                    text-align: center;
+
+                    img {
+                        width: 50%;
+                    }
+                }
+
+                .productDescription__content {
+                    .productDescription__subtitle {
+                        font-size: $mobileProductDescriptionSubtitleFontSize;
+                        padding-bottom: $mobileProductDescriptionSubtitlePaddingBottom;
+                    }
+
+                    .productDescription__block {
+                        &::before {
+                            @include blockSize(2px, 70%);
+                            left: $productDescriptionBlockBeforeLeft;
+                            top: $productDescriptionBlockBeforeTop;
+                        }
+
+                        .productDescription__item {
+                            padding-left: $productDescriptionItemPaddingLeft;
+
+                            &::before {
+                                @include blockSize($productDescriptionItemBeforeSize, $productDescriptionItemBeforeSize);
+                                top: $productDescriptionItemBeforeTop;
+                            }
+
+                            &::after {
+                                left: $productDescriptionItemAfterLeft;
+                                top: $productDescriptionItemAfterTop;
+                            }
+
+                            .productDescriptionItem__title {
+                                font-size: $productDescriptionItemTitleFontSize;
+                            }
+
+                            .productDescriptionItem__text {
+                                padding: $productDescriptionItemTextPadding;
+                                font-size: $productDescriptionItemTextFontSize;
+                            }
+                        }
+                    }
+
+                    .productDescription__bonus {
+                        .productDescriptionBonus__title {
+                            padding-top: $mobileProductDescriptionBonusTitlePaddingTop;
+                            font-size: $productDescriptionBonusTitleFontSize;
+                        }
+
+                        .productDescriptionBonus__text {
+                            font-size: $productDescriptionBonusTextFontSize;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 880px) and (min-width: 541px) {
+    .productDescription {
+        padding-bottom: $mobileProductDescriptionPaddingBottom;
+
+        .container {
+            .productDescription__title {
+                padding-bottom: $mobileProductDescriptionTitlePaddingBottom;
+
+                span {
+                    font-size: $productDescriptionTitleFontSize;
+                }
+            }
+
+            .productDescription__main {
+                @include flexbox(column, none, none);
+                padding: $productDescriptionMainPadding;
+
+                .productDescription__img {
+                    display: none;
+                }
+
+                .productDescription__content {
+                    .productDescription__subtitle {
+                        font-size: $mobileProductDescriptionSubtitleFontSize;
+                        padding-bottom: $mobileProductDescriptionSubtitlePaddingBottom;
+                    }
+
+                    .productDescription__block {
+                        &::before {
+                            @include blockSize(2px, 70%);
+                            left: $productDescriptionBlockBeforeLeft;
+                            top: $productDescriptionBlockBeforeTop;
+                        }
+
+                        .productDescription__item {
+                            padding-left: $productDescriptionItemPaddingLeft;
+
+                            &::before {
+                                @include blockSize($productDescriptionItemBeforeSize, $productDescriptionItemBeforeSize);
+                                top: $productDescriptionItemBeforeTop;
+                            }
+
+                            &::after {
+                                left: $productDescriptionItemAfterLeft;
+                                top: $productDescriptionItemAfterTop;
+                            }
+
+                            .productDescriptionItem__title {
+                                font-size: $productDescriptionItemTitleFontSize;
+                            }
+
+                            .productDescriptionItem__text {
+                                padding: $productDescriptionItemTextPadding;
+                                font-size: $productDescriptionItemTextFontSize;
+                            }
+                        }
+                    }
+
+                    .productDescription__bonus {
+                        .productDescriptionBonus__title {
+                            padding-top: $mobileProductDescriptionBonusTitlePaddingTop;
+                            font-size: $productDescriptionBonusTitleFontSize;
+                        }
+
+                        .productDescriptionBonus__text {
+                            font-size: $productDescriptionBonusTextFontSize;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .productDescription {
+        padding-bottom: calc(.4em + 4vw);
+
+        .container {
+            .productDescription__title {
+                padding-bottom: calc(.4em + 4vw);
+
+                span {
+                    font-size: calc(.3em + 4vw);
+                }
+            }
+
+            .productDescription__main {
+                @include flexbox(column, none, none);
+                padding: calc(.3em + 4vw) calc(.2em + 1.5vw) calc(.4em + 4vw) calc(.4em + 4vw);
+
+                .productDescription__img {
+                    display: none;
+                }
+
+                .productDescription__content {
+                    .productDescription__subtitle {
+                        font-size: calc(.3em + 3vw);
+                        padding-bottom: calc(.3em + 3vw);
+                    }
+
+                    .productDescription__block {
+                        &::before {
+                            display: none;
+                        }
+
+                        .productDescription__item {
+
+                            &::before,
+                            &::after {
+                                display: none;
+                            }
+
+                            .productDescriptionItem__title {
+                                font-size: calc(.3em + 3vw);
+                            }
+
+                            .productDescriptionItem__text {
+                                padding: calc(.1em + 1vw) 0 calc(.3em + 3vw) 0;
+                                font-size: calc(.2em + 2vw);
+                            }
+                        }
+                    }
+
+                    .productDescription__bonus {
+                        .productDescriptionBonus__title {
+                            padding-top: calc(.1em + 1vw);
+                            font-size: calc(.3em + 3vw);
+                        }
+
+                        .productDescriptionBonus__text {
+                            font-size: calc(.2em + 2vw);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

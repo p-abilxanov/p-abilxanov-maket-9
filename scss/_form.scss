@@ -1,0 +1,101 @@
+.form {
+    .container {
+        @include flexbox(column, none, none);
+    }
+}
+
+.form__main {
+    align-self: center;
+    width: 60%;
+    padding-top: 45px;
+
+    form {
+        @include flexbox(column, none, none);
+
+        .form__list {
+            @include flexbox(none, space-between, none);
+            padding-bottom: 45px;
+
+            label {
+                position: relative;
+                width: 100%;
+
+                input {
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                    background-color: none;
+                    border-bottom: 1px solid #7aafe6;
+                    padding: 14px 0;
+                    font-size: 15px;
+                    font-family: $fontFamilySeravekRegular;
+                    color: rgb(75, 76, 76);
+                    transition: border-color .5s;
+
+                    &:focus {
+                        border-color: #c9c9c9;
+                    }
+
+                    &:not(:placeholder-shown),
+                    &:focus,
+                    &:hover {
+                        &+span {
+                            bottom: 100%;
+                            color: #d1e1f4;
+                        }
+                    }
+                }
+
+                span {
+                    position: absolute;
+                    left: 0;
+                    bottom: 14px;
+                    font-size: 15px;
+                    font-family: $fontFamilySeravekRegular;
+                    color: #7aafe6;
+                    transition: bottom .5s, color .5s;
+
+                    &:hover {
+                        bottom: 100%;
+                        color: #d1e1f4;
+                    }
+                }
+            }
+        }
+
+        .form-list-first {
+            padding-bottom: 70px;
+
+            label {
+                width: calc(50% - 20px);
+
+                input {
+                    width: 100%;
+                }
+            }
+        }
+
+        .form-list-third {
+            align-self: flex-end;
+
+            input {
+                @include flexbox(none, none, center);
+                border: none;
+                outline: none;
+                box-shadow: $headerContentBtnBoxSHadow;
+                background-image: $headerContentBtnBg;
+                color: $headerContentBtnColor;
+                font-family: $fontFamilyGilroyLight;
+                letter-spacing: 0.3px;
+                transition: box-shadow .5s;
+                border-radius: $headerContentBtnBorderRadius;
+                font-size: $headerContentBtnFontSize;
+                padding: $headerContentBtnPadding;
+
+                &:hover {
+                    box-shadow: $headerContentBtnBoxSHadowHover;
+                }
+            }
+        }
+    }
+}

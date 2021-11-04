@@ -1,0 +1,84 @@
+.header {
+    background: $headerBgUrl;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .container {
+        @include flexbox(column, none, none);
+    }
+}
+
+.header__nav {
+    @include flexbox(none, space-between, center);
+
+    .header__logo {
+        img {
+            @include blockSize(auto, auto);
+        }
+    }
+
+    .header__menu {
+        ul {
+            @include flexbox(none, space-between, center);
+
+            li a {
+                color: $headerNavLinkColor;
+                font-family: $fontFamilySeravekRegular;
+                letter-spacing: 0.3px;
+            }
+        }
+    }
+
+    .header__btn {
+        a {
+            border: $headerNavBtnBorder;
+            color: $headerNavBtnColor;
+            font-family: $fontFamilySeravekRegular;
+            border-radius: 50px;
+            letter-spacing: 0.3px;
+        }
+    }
+}
+
+.header__content {
+    @include flexbox(column, none, none);
+
+    .header__title {
+        span {
+            display: block;
+            color: $headerTitleColor;
+            font-family: $fontFamilySeravekBold;
+            text-transform: uppercase;
+
+            span {
+                display: inline-block;
+                color: $headerTitleSpanColor;
+                font-family: $fontFamilySeravekMedium;
+                letter-spacing: 1.13px;
+            }
+        }
+    }
+
+    .header__text {
+        color: $headerTextColor;
+        font-family: $fontFamilyGilroyLight;
+    }
+
+    .headerContent__btn {
+        @include flexbox(none, none, center);
+
+        a {
+            @include flexbox(none, none, center);
+            box-shadow: $headerContentBtnBoxSHadow;
+            background-image: $headerContentBtnBg;
+            color: $headerContentBtnColor;
+            font-family: $fontFamilyGilroyLight;
+            letter-spacing: 0.3px;
+            transition: box-shadow .5s;
+
+            &:hover {
+                box-shadow: $headerContentBtnBoxSHadowHover;
+            }
+        }
+    }
+}

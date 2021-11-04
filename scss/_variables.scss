@@ -1,0 +1,109 @@
+// FONT FAMILY VARIABLES
+$fontFamilyGilroyRegular: 'Roboto - Regular';
+$fontFamilyGilroyLight: 'Roboto - Light';
+$fontFamilyGilroyBold: 'Roboto - Bold';
+$fontFamilyGilroySemiBold: 'Roboto - Bold';
+$fontFamilyProximaNovaLight: 'Roboto - Light';
+$fontFamilyProximaNovaRegular: 'Roboto - Regular';
+$fontFamilySeravekMedium: 'Roboto - Medium';
+$fontFamilySeravekBold: 'Roboto - Bold';
+$fontFamilySeravekRegular: 'Roboto - Regular';
+
+// TOP VARIABLES
+$topMaxHeight: 200px;
+$topBg: linear-gradient(-220deg, #f53f63 0%, #fd634f 100%);
+$topContentColor: #fff;
+$topPadding: 9px 15px;
+$topContentPaddingLeft: 15px;
+$topContentFontSize: 15px;
+
+
+
+// HEADER VARIABLES
+$headerBgUrl: url(../image/headerBg.png);
+$headerNavLinkColor: #fff;
+$headerNavBtnColor: #fff;
+$headerNavBtnBorder: 2px solid #ee3e6f;
+$headerTitleColor: #fff;
+$headerTitleSpanColor: #fce744;
+$headerTextColor: #fff;
+$headerContentBtnBoxSHadow: 0 8px 13px rgba(252, 65, 87, 0.28),
+0 0 32px rgba(253, 144, 126, 0.1);
+$headerContentBtnBoxSHadowHover: 0 8px 13px rgba(252, 65, 87, 0.4),
+0 0 32px rgba(253, 144, 126, 0.4);
+$headerContentBtnBg: linear-gradient(-52deg, #fe8448 0%, #ee3e6f 100%);
+$headerContentBtnColor: #fff;
+$headerNavPadding: 25px 0;
+$headerNavLinkMargin: 0 10px;
+$headerNavLinkFontSize: 15px;
+$headerNavBtnPadding: 16px 48px;
+$headerNavBtnFontSize: 15px;
+$headerContentPadding: 100px 0 150px 0;
+$headerTitleFontSize: 45px;
+$mobileHeaderTitleFontSize: 32px;
+$headerTextFontSize: 15px;
+$mobileHeaderTextFontSize: 14px;
+$headerTextPadding: 65px 0 34px 0;
+$headerTextMaxWidth: 530px;
+$mobileHeaderTextMaxWidth: 50%;
+$headerTextLineHeight: 24px;
+$headerContentBtnBorderRadius: 22px;
+$headerContentBtnFontSize: 15px;
+$headerContentBtnPadding: 14px 45px;
+$headerContentBtnIconFontSize: 16px;
+$headerContentBtnSpanPaddingRight: 35px;
+$headerMenuBgColor: rgba($color: #000000, $alpha: .6);
+$headerMenuLinkColor: #fff;
+$headerMenuLinkFontSize: 15px;
+$headerBtnPadding: 16px 48px;
+$headerBtnBorderRadius: 30px;
+$headerBtnBorder: 2px solid #ee3e6f;
+$headerBtnColor: #ffffff;
+$headerBtnFontSize: 15px;
+
+// PARTNERS VARIABLES
+$partnersItemTextColor: #555555;
+$partnersMainPadding: 20px 0;
+$partnersItemFontSize: 20px;
+$mobilePartnersItemFontSize: 16px;
+$partnersItemImgWidth: calc((100% - 7 * 70px) / 8);
+$mobilePartnersItemImgWidth: calc((100% - 200px) / 8);
+
+
+// PRODUCT DESCRIPTION VARIABLES
+$productBgUrl: url(../image/Группа1.png);
+$productDescriptionTitleColor: rgb(75, 76, 76);
+$productDescriptionMainBgColor: rgb(255, 255, 255);
+$productDescriptionSubtitle: rgb(122, 175, 230);
+$productDescriptionBlockBeforeBgColor: rgb(122, 175, 230);
+$productDescriptionItemBeforeBgColor: #fff;
+$productDescriptionItemBeforeBorder: 1px solid rgb(122, 175, 230);
+$productDescriptionItemAfterBgColor: rgb(122, 175, 230);
+$productDescriptionItemTitleColor: rgb(54, 148, 206);
+$productDescriptionBonusTitleColor: rgb(253, 88, 104);
+$productDescriptionPaddingBottom: 30px;
+$mobileProductDescriptionPaddingBottom: 30px;
+$productDescriptionTitlePaddingBottom: 50px;
+$mobileProductDescriptionTitlePaddingBottom: 30px;
+$productDescriptionTitleFontSize: 28px;
+$productDescriptionMainPadding: 25px 10px 40px 40px;
+$productDescriptionImgPaddingTop: 35px;
+$productDescriptionContentMaxWidth: 50%;
+$productDescriptionSubtitlePaddingBottom: 40px;
+$productDescriptionSubtitleFontSize: 28px;
+$mobileProductDescriptionSubtitleFontSize: 24px;
+$mobileProductDescriptionSubtitlePaddingBottom: 20px;
+$productDescriptionBlockBeforeLeft: 8px;
+$productDescriptionBlockBeforeTop: 22px;
+$productDescriptionItemPaddingLeft: 35px;
+$productDescriptionItemBeforeSize: 18px;
+$productDescriptionItemBeforeTop: 20px;
+$productDescriptionItemAfterTop: 27px;
+$productDescriptionItemAfterLeft: 7px;
+$productDescriptionItemTitleFontSize: 18px;
+$productDescriptionItemTextFontSize: 14px;
+$productDescriptionItemTextPadding: 10px 0 20px 0;
+$productDescriptionBonusTitlePaddingTop: 10px;
+$mobileProductDescriptionBonusTitlePaddingTop: 10px;
+$productDescriptionBonusTitleFontSize: 18px;
+$productDescriptionBonusTextFontSize: 14px;
